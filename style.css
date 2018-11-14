@@ -1,0 +1,252 @@
+.niedzwiedz {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.bottom {
+    width: 155px;
+    height: 190px;
+    position: absolute;
+    top: 20%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: sandybrown;
+    border-radius: 50%;
+}
+
+.top {
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    top: 0;
+    bottom: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: sandybrown;
+    border-radius: 50%;
+}
+
+
+.left-ear {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 10%;
+    right: 60%;
+    bottom: 100%;
+    margin: auto;
+    background-color: sandybrown;
+    border-radius: 50%;
+}
+
+.right-ear {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 10%;
+    left: 60%;
+    right: 0;
+    bottom: 100%;
+    margin: auto;
+    background-color: sandybrown;
+    border-radius: 50%;
+}
+
+.nose {
+    width: 40px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: black;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.left-eye {
+     animation: blink 4s infinite;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 0;
+    bottom: 40%;
+    margin: auto;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.right-eye {
+    animation: blink 4s infinite;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 50%;
+    bottom: 40%;
+    margin: auto;
+    background-color: black;
+    border-radius: 50%;
+}
+
+@keyframes blink {
+    0% {
+        opacity:0;
+    }
+
+    10% {
+        opacity:1;
+    }
+}
+
+
+.cheek {
+    width: 80px;
+    height: 85px;
+    position: absolute;
+    top: 23%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+
+    background-color: ghostwhite;
+    border-radius: 50%;
+}
+
+.left-hand {
+    width: 80px;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    left: 70%;
+    right: 0;
+    bottom: 50%;
+    margin: auto;
+    background-color: sandybrown;
+    border-radius: 50%;
+    transform: rotatey(40deg);
+}
+
+.right-hand {
+    width: 80px;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    left: -90%;
+    right: 0;
+    bottom: 50%;
+    margin: auto;
+    background-color: sandybrown;
+    border-radius: 50%;
+    transform: rotatey(40deg);
+}
+
+.right-leg {
+    width: 80px;
+    height: 60px;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: sandybrown;
+    border-radius: 50%;
+    transform: rotatey(40deg);
+}
+
+.left-leg {
+    width: 80px;
+    height: 60px;
+    position: absolute;
+    top: 90%;
+    left: 0;
+    right: 50%;
+    bottom: 0;
+    margin: auto;
+    background-color: sandybrown;
+    border-radius: 50%;
+    transform: rotatey(40deg);
+}
+
+.belly {
+    width: 90px;
+    height: 150px;
+    position: absolute;
+    top: 0;
+    bottom: 30%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: ghostwhite;
+    border-radius: 50%;
+}
+
+.heart {
+    animation-name: beat;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    background-color: red;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 160%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: rotate(225deg);
+    z-index: 1;
+}
+
+.heart::after {
+    content: "";
+    background-color: red;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    right: 0;
+    border-radius: 50%;
+
+}
+
+.heart::before {
+    content: "";
+    background-color: red;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 50%;
+}
+
+@keyframes beat {
+    0% {
+        transform: scale(1) rotate(225deg);
+    }
+
+    50% {
+        transform: scale(0.7) rotate(225deg);
+    }
+}
