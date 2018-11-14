@@ -250,3 +250,63 @@
         transform: scale(0.7) rotate(225deg);
     }
 }
+
+
+.cloud{ 
+    position:absolute;    
+    width: 150px;
+    height: 150px;
+    background-color:skyblue;
+    border-radius:50%;
+    transform:rotate(20deg);
+    animation: cloud 10s infinite ease-in-out;
+   
+}
+
+@keyframes cloud {
+    0% {
+        transform:translate(350%);
+    }
+
+    50% {
+        transform:translate(250%);
+    }
+    
+    100%{
+        transform:translate(350%);
+    }
+}
+
+
+.cloud::before {
+    content: "";
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    background-color: skyblue;
+    border-radius: 50%;
+    right: 50%;
+    top: 10%;
+}
+
+.cloud::after {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background-color: skyblue;
+    border-radius: 50%;
+   left: 50%;
+    
+}
+
+.text {
+    position: absolute;
+    top:40%;
+    z-index:2;
+    color:azure;
+    font-size:25px;
+    text-align: center;
+     transform:rotate(-10deg);
+    
+}
